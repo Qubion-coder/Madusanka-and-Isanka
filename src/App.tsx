@@ -861,23 +861,23 @@ export default function WeddingInvitation() {
                     ඔබගේ පැමිණීම අපට මහත් සතුටකි. කරුණාකර ඔබගේ පැමිණීම තහවුරු කරන්න.
                   </p>
 
-                    {/* Premium RSVP Form */}
+                  {/* Premium RSVP Form */}
                   <div className="w-full bg-white/5 backdrop-blur-md p-6 sm:p-8 md:p-12 rounded-[2rem] border border-white/10 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.5)]">
                     <form className="space-y-8 text-left" onSubmit={submitRSVP}>
                       <div className="space-y-3">
-                        <label className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] font-bold text-theme-200 ml-2">සම්පූර්ණ නම</label>
+                        <label className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-theme-200 ml-2">සම්පූර්ණ නම</label>
                         <input
                           type="text"
                           required
                           value={rsvpName}
                           onChange={(e) => setRsvpName(e.target.value)}
-                          placeholder="සමන් සහ කමලා"
+                          //placeholder="සමන් සහ කමලා"
                           className="w-full bg-transparent border-b border-white/20 px-2 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-theme-300 transition-colors font-cinzel text-lg md:text-xl tracking-wide"
                         />
                       </div>
 
                       <div className="space-y-3">
-                        <label className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] font-bold text-theme-200 ml-2">අමුත්තන් ගණන</label>
+                        <label className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-theme-200 ml-2">අමුත්තන් ගණන</label>
                         <div className="relative">
                           <select
                             value={rsvpGuests}
@@ -897,12 +897,12 @@ export default function WeddingInvitation() {
                       </div>
 
                       <div className="space-y-3">
-                        <label className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] font-bold text-theme-200 ml-2">ආහාරමය සටහන්</label>
+                        <label className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-theme-200 ml-2">වෙනත් සටහන්</label>
                         <input
                           type="text"
                           value={rsvpNotes}
                           onChange={(e) => setRsvpNotes(e.target.value)}
-                          placeholder="ආසාත්මිකතා, නිර්මාංශික යනාදිය"
+                          //placeholder="ආසාත්මිකතා, නිර්මාංශික යනාදිය"
                           className="w-full bg-transparent border-b border-white/20 px-2 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-theme-300 transition-colors font-cinzel text-lg md:text-xl tracking-wide"
                         />
                       </div>
@@ -957,24 +957,24 @@ export default function WeddingInvitation() {
 
                       <form className="space-y-8 text-left relative z-10" onSubmit={submitWish}>
                         <div className="space-y-3">
-                          <label className="text-[7px] md:text-[9px] uppercase tracking-[0.4em] font-bold text-stone-400 ml-2">ඔබගේ නම</label>
+                          <label className="text-xs md:text-sm uppercase tracking-[0.4em] font-bold text-stone-400 ml-2">ඔබගේ නම</label>
                           <input
                             type="text"
                             required
                             value={wishName}
                             onChange={(e) => setWishName(e.target.value)}
-                            placeholder="සමන්"
+                            //placeholder="සමන්"
                             className="w-full bg-stone-50/50 border-b border-theme-200 px-4 py-4 text-theme-900 placeholder:text-stone-300 focus:outline-none focus:border-theme-400 focus:bg-white transition-all font-cinzel text-lg tracking-wide rounded-t-lg"
                           />
                         </div>
                         <div className="space-y-3">
-                          <label className="text-[7px] md:text-[9px] uppercase tracking-[0.4em] font-bold text-stone-400 ml-2">ඔබගේ පණිවිඩය</label>
+                          <label className="text-xs md:text-sm uppercase tracking-[0.4em] font-bold text-stone-400 ml-2">ඔබගේ පණිවිඩය</label>
                           <textarea
                             rows={4}
                             required
                             value={wishMessage}
                             onChange={(e) => setWishMessage(e.target.value)}
-                            placeholder="ඔබට සදාකාලික සතුටක් ප්‍රාර්ථනා කරමි..."
+                            //placeholder="ඔබට සදාකාලික සතුටක් ප්‍රාර්ථනා කරමි..."
                             className="w-full bg-stone-50/50 border-b border-theme-200 px-4 py-4 text-theme-900 placeholder:text-stone-300 focus:outline-none focus:border-theme-400 focus:bg-white transition-all font-cinzel text-lg tracking-wide resize-none rounded-t-lg"
                           />
                         </div>
