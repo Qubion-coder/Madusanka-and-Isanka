@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, MapPin, Calendar, Clock } from "lucide-react";
+import { Sparkles, MapPin, Calendar, Clock, Volume2, VolumeX } from "lucide-react";
 
 /**
  * Premium Sri Lankan Wedding Invitation Theme
@@ -215,6 +215,28 @@ export default function WeddingInvitation() {
   const [wishMessage, setWishMessage] = useState("");
   const [wishStatus, setWishStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
+  // Audio State
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const toggleAudio = () => {
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play().catch(e => console.log("Audio play failed", e));
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  const handleOpenInvitation = () => {
+    setIsOpened(true);
+    if (audioRef.current) {
+      audioRef.current.play().then(() => setIsPlaying(true)).catch(e => console.log("Audio autoplay prevented", e));
+    }
+  };
+
   const submitRSVP = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!rsvpName.trim()) return;
@@ -333,7 +355,7 @@ export default function WeddingInvitation() {
             {/* Gatefold Envelope */}
             <div
               className="relative w-full max-w-[430px] aspect-[1/1.42] flex items-center justify-center group cursor-pointer perspective-1000"
-              onClick={() => setIsOpened(true)}
+              onClick={handleOpenInvitation}
             >
               <div className="absolute -inset-8 bg-[radial-gradient(circle,_rgba(243,167,205,0.35)_0%,_rgba(241,214,232,0.2)_45%,_transparent_75%)] blur-3xl opacity-90" />
               <div className="absolute inset-0 bg-gradient-to-b from-[#fffefb] via-[#fff9f2] to-[#fff6ee] rounded-[1.4rem] shadow-[0_28px_80px_-20px_rgba(82,38,66,0.35)] border border-theme-200/80 overflow-hidden" />
@@ -1026,6 +1048,21 @@ export default function WeddingInvitation() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <audio ref={audioRef} src="/paulyudin-wedding-485932.mp3" loop />
+      
+      {/* Floating Audio Toggle Button */}
+      {isOpened && (
+        <motion.button
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          onClick={toggleAudio}
+          className="fixed bottom-6 right-6 z-50 bg-white/80 backdrop-blur-md p-4 rounded-full shadow-lg border border-theme-200 text-theme-800 hover:bg-theme-100 transition-all hover:scale-110 active:scale-95"
+          aria-label="Toggle music"
+        >
+          {isPlaying ? <Volume2 size={24} /> : <VolumeX size={24} />}
+        </motion.button>
+      )}
 
       <style dangerouslySetInnerHTML={{
         __html: `
