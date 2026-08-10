@@ -4,9 +4,9 @@
   --font-serif: "Cormorant Garamond", serif;
   --font-script: "Great Vibes", cursive;
   --font-sans: "Inter", sans-serif;
-  --font-cinzel: "Cinzel", serif;
-  --font-montserrat: "Montserrat", sans-serif;
-  --font-playball: "Playball", cursive;
+  --font-cinzel: "Cinzel", "Abhaya Libre", serif;
+  --font-montserrat: "Montserrat", "Abhaya Libre", sans-serif;
+  --font-playball: "Playball", "Abhaya Libre", cursive;
 
   --color-sage: #f3a7cd;
   --color-paper: #FDFBF7;

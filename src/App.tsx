@@ -4,7 +4,7 @@ import { Sparkles, MapPin, Calendar, Clock } from "lucide-react";
 
 /**
  * Premium Sri Lankan Wedding Invitation Theme
- * Names: Isanka & Madusanka
+ * Names: ඉසංකා සහ මදුසංක
  * Background: Cream/Sand
  * Accents: Green/Brown
  */
@@ -155,10 +155,10 @@ function CountdownTimer() {
   const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
   const stats = [
-    { label: "Days", value: days },
-    { label: "Hours", value: hours },
-    { label: "Minutes", value: minutes },
-    { label: "Seconds", value: seconds },
+    { label: "දින", value: days },
+    { label: "පැය", value: hours },
+    { label: "මිනිත්තු", value: minutes },
+    { label: "තත්පර", value: seconds },
   ];
 
   return (
@@ -322,12 +322,12 @@ export default function WeddingInvitation() {
             {/* Title */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-10">
               <span className="inline-block px-5 py-2 rounded-full bg-theme-50 border border-theme-200 text-[10px] uppercase tracking-[0.5em] text-theme-700 font-bold mb-6">
-                Save the Date
+                සුබ මංගලම්
               </span>
               <h1 className="font-cinzel text-4xl md:text-5xl text-stone-800 mb-4 tracking-tight">
-                Isanka & Madusanka
+                ඉසංකා සහ මදුසංක
               </h1>
-              <p className="text-stone-500 text-sm tracking-[0.2em] font-light">OCTOBER 08, 2026</p>
+              <p className="text-stone-500 text-sm tracking-[0.2em] font-light">2026 ඔක්තෝබර් 08</p>
             </motion.div>
 
             {/* Gatefold Envelope */}
@@ -373,7 +373,7 @@ export default function WeddingInvitation() {
                 />
 
                 <div className="text-theme-100/35 rotate-90 whitespace-nowrap text-xs tracking-[0.55em] uppercase font-bold relative z-10">
-                  ISANKA & MADUSANKA
+                  ඉසංකා සහ මදුසංක
                 </div>
               </motion.div>
 
@@ -409,9 +409,9 @@ export default function WeddingInvitation() {
                 <div className="absolute inset-1.5 rounded-full border border-theme-400/50" />
                 <div className="absolute inset-3 rounded-full border border-theme-500/30" />
                 <div className="text-center relative z-10">
-                  <p className="font-cinzel text-[1.7rem] font-bold text-stone-800 leading-none">I&M</p>
+                  <p className="font-cinzel text-[1.7rem] font-bold text-stone-800 leading-none">ඉ&ම</p>
                   <div className="h-px w-12 bg-stone-400 mx-auto my-1.5" />
-                  <p className="text-[8px] uppercase tracking-[0.35em] font-bold text-stone-600">Open</p>
+                  <p className="text-[8px] uppercase tracking-[0.35em] font-bold text-stone-600">විවෘත කරන්න</p>
                 </div>
               </motion.div>
 
@@ -421,12 +421,12 @@ export default function WeddingInvitation() {
               </div>
 
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-40 text-[8px] uppercase tracking-[0.45em] text-theme-700/80 font-bold bg-white/70 backdrop-blur-md px-4 py-2 rounded-full border border-theme-200/80 shadow-sm">
-                Tap Seal To Open
+                විවෘත කිරීමට මුද්‍රාව ස්පර්ශ කරන්න
               </div>
             </div>
 
             <p className="mt-8 text-[11px] uppercase tracking-[0.6em] text-stone-400 font-bold animate-pulse">
-              Tap to Reveal
+              විවෘත කිරීමට ස්පර්ශ කරන්න
             </p>
           </motion.div>
         ) : (
@@ -444,7 +444,7 @@ export default function WeddingInvitation() {
               className="fixed top-6 right-6 z-50 bg-white/80 backdrop-blur-md p-3 rounded-full shadow-lg border border-theme-100 text-theme-800 hover:bg-theme-50 transition-colors"
             >
               <div className="flex flex-col items-center">
-                <div className="text-[8px] uppercase tracking-widest font-bold">Close</div>
+                <div className="text-[8px] uppercase tracking-widest font-bold">වසන්න</div>
               </div>
             </motion.button>
 
@@ -460,7 +460,7 @@ export default function WeddingInvitation() {
                 transition={{ duration: 2, ease: "easeOut" }}
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-cinzel text-[40vw] text-theme-900 pointer-events-none whitespace-nowrap leading-none select-none z-0"
               >
-                I&M
+                ඉ&ම
               </motion.div>
 
               {/* Central Premium Arch Card */}
@@ -490,7 +490,7 @@ export default function WeddingInvitation() {
                     transition={{ delay: 0.8, duration: 1 }}
                   >
                     <span className="block text-[8px] md:text-[10px] uppercase tracking-[0.4em] md:tracking-[0.6em] text-theme-700 font-bold mb-2">
-                      Please join us
+                      කරුණාකර අප හා එක්වන්න
                     </span>
                   </motion.div>
 
@@ -501,7 +501,7 @@ export default function WeddingInvitation() {
                       transition={{ delay: 1, duration: 0.8 }}
                       className="font-playball text-[3rem] sm:text-[3.5rem] md:text-[5rem] text-stone-800 leading-[1.1] drop-shadow-sm"
                     >
-                      Isanka
+                      ඉසංකා
                     </motion.h1>
                     <motion.div
                       initial={{ scale: 0 }}
@@ -517,7 +517,7 @@ export default function WeddingInvitation() {
                       transition={{ delay: 1.4, duration: 0.8 }}
                       className="font-playball text-[3rem] sm:text-[3.5rem] md:text-[5rem] text-stone-800 leading-[1.1] drop-shadow-sm"
                     >
-                      Madusanka
+                      මදුසංක
                     </motion.h1>
                   </div>
 
@@ -533,8 +533,8 @@ export default function WeddingInvitation() {
                       <div className="h-px w-full bg-gradient-to-l from-transparent via-theme-300 to-theme-400" />
                     </div>
                     <div className="font-cinzel space-y-1">
-                      <p className="text-sm md:text-base text-stone-700 tracking-[0.2em] md:tracking-[0.3em] font-bold">08 OCTOBER 2026</p>
-                      <p className="text-[8px] md:text-[9px] text-theme-600 tracking-[0.2em] uppercase font-bold">Hingurakgoda, Sri Lanka</p>
+                      <p className="text-sm md:text-base text-stone-700 tracking-[0.2em] md:tracking-[0.3em] font-bold">2026 ඔක්තෝබර් 08</p>
+                      <p className="text-[8px] md:text-[9px] text-theme-600 tracking-[0.2em] uppercase font-bold">හිඟුරක්ගොඩ, ශ්‍රී ලංකාව</p>
                     </div>
                   </motion.div>
                 </div>
@@ -546,7 +546,7 @@ export default function WeddingInvitation() {
                 transition={{ delay: 2.2, duration: 1 }}
                 className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer z-20 group"
               >
-                <span className="text-[8px] md:text-[9px] uppercase tracking-widest text-stone-400 font-bold group-hover:text-theme-600 transition-colors">Begin</span>
+                <span className="text-[8px] md:text-[9px] uppercase tracking-widest text-stone-400 font-bold group-hover:text-theme-600 transition-colors">ආරම්භය</span>
                 <div className="w-px h-10 md:h-12 relative overflow-hidden bg-stone-200">
                   <motion.div
                     animate={{ y: [-40, 60] }}
@@ -582,7 +582,7 @@ export default function WeddingInvitation() {
                 >
                   <div className="w-px h-16 md:h-24 bg-gradient-to-b from-transparent to-theme-400 mb-6 md:mb-10" />
                   <p className="text-theme-700 text-[9px] md:text-[12px] tracking-[0.4em] md:tracking-[0.6em] uppercase font-bold text-center leading-loose">
-                    You are cordially invited to<br className="hidden md:block" /> celebrate the union of
+                    අපගේ විවාහ මංගල්‍යය සඳහා සහභාගී වන මෙන්<br className="hidden md:block" /> කාරුණිකව ආරාධනා කරමු.
                   </p>
                 </motion.div>
 
@@ -620,7 +620,7 @@ export default function WeddingInvitation() {
                         <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">ප්‍රියදර දියණිය</p>
                         <p className="text-xs md:text-sm font-cinzel text-stone-600 tracking-wide leading-relaxed">K.H.G. පත්මසිරි මැතිතුමා<br />හා එම මැතිණිය</p>
                       </div>
-                      <h3 className="text-5xl md:text-7xl font-playball text-theme-800 group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">Isanka</h3>
+                      <h3 className="text-5xl md:text-7xl font-playball text-theme-800 group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">ඉසංකා</h3>
                     </div>
                   </motion.div>
 
@@ -634,7 +634,7 @@ export default function WeddingInvitation() {
                       transition={{ delay: 0.3, type: "spring", stiffness: 100 }}
                       className="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-theme-500 to-theme-700 rounded-full flex items-center justify-center shadow-xl shadow-theme-900/20 border-4 border-[#fdfaf5]"
                     >
-                      <span className="text-3xl md:text-5xl font-playball text-white md:-mt-1 drop-shadow-md">&</span>
+                      <span className="text-3xl md:text-5xl font-playball text-white md:-mt-1 drop-shadow-md">සහ</span>
                     </motion.div>
                     <div className="hidden md:block w-px h-32 bg-gradient-to-b from-theme-300 to-transparent" />
                   </div>
@@ -654,7 +654,7 @@ export default function WeddingInvitation() {
                         <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">ප්‍රියදර පුතු</p>
                         <p className="text-xs md:text-sm font-cinzel text-stone-600 tracking-wide leading-relaxed">L. ආනන්ද ලියනගේ මැතිතුමා<br />හා එම මැතිණිය</p>
                       </div>
-                      <h3 className="text-5xl md:text-7xl font-playball text-theme-800 group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">Madusanka</h3>
+                      <h3 className="text-5xl md:text-7xl font-playball text-theme-800 group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">මදුසංක</h3>
                     </div>
                   </motion.div>
                 </div>
@@ -671,8 +671,8 @@ export default function WeddingInvitation() {
                   <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-32 text-center w-full max-w-4xl px-4">
                     <div className="flex flex-col items-center flex-1">
                       <Calendar className="w-6 h-6 md:w-8 md:h-8 text-theme-500 mb-4 opacity-80" />
-                      <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-stone-400 font-bold mb-3">The Date</p>
-                      <p className="font-cinzel text-xl md:text-3xl text-theme-900 tracking-widest font-bold whitespace-nowrap">THURSDAY, 08 OCT</p>
+                      <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-stone-400 font-bold mb-3">දිනය</p>
+                      <p className="font-cinzel text-xl md:text-3xl text-theme-900 tracking-widest font-bold whitespace-nowrap">බ්‍රහස්පතින්දා, ඔක්. 08</p>
                       <p className="font-cinzel text-lg md:text-xl text-theme-600 tracking-[0.3em] font-normal mt-2">2026</p>
                     </div>
 
@@ -690,9 +690,9 @@ export default function WeddingInvitation() {
 
                     <div className="flex flex-col items-center flex-1">
                       <Clock className="w-6 h-6 md:w-8 md:h-8 text-theme-500 mb-4 opacity-80" />
-                      <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-stone-400 font-bold mb-3">The Time</p>
-                      <p className="font-cinzel text-xl md:text-3xl text-theme-900 tracking-widest font-bold whitespace-nowrap">09:00 AM</p>
-                      <p className="font-cinzel text-xs md:text-sm text-theme-600 tracking-[0.2em] mt-3 uppercase">To 04:00 PM</p>
+                      <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-stone-400 font-bold mb-3">වේලාව</p>
+                      <p className="font-cinzel text-xl md:text-3xl text-theme-900 tracking-widest font-bold whitespace-nowrap">පෙරවරු 09:00</p>
+                      <p className="font-cinzel text-xs md:text-sm text-theme-600 tracking-[0.2em] mt-3 uppercase">පස්වරු 04:00 දක්වා</p>
                     </div>
                   </div>
 
@@ -735,12 +735,12 @@ export default function WeddingInvitation() {
                   </div>
 
                   <h2 className="font-cinzel text-3xl md:text-5xl text-theme-900 mb-8 relative z-10 tracking-widest font-bold drop-shadow-sm px-4 leading-[1.4]">
-                    Wait for the <span className="font-playball text-theme-700 italic lowercase tracking-normal text-4xl md:text-7xl ml-2">magic</span>
+                    සුබ මොහොත <span className="font-playball text-theme-700 italic lowercase tracking-normal text-4xl md:text-7xl ml-2">එළඹෙන තුරු</span>
                   </h2>
 
                   <p className="text-[10px] md:text-[11px] uppercase tracking-[0.5em] text-theme-600 font-bold bg-white/80 backdrop-blur-sm px-8 py-3 rounded-full border border-theme-200/50 inline-flex items-center gap-3 shadow-[0_4px_15px_-5px_rgba(0,0,0,0.05)] relative z-10">
                     <span className="w-1 h-1 rounded-full bg-theme-400 animate-pulse" />
-                    Counting Down
+                    කාලය ගණනය කිරීම
                     <span className="w-1 h-1 rounded-full bg-theme-400 animate-pulse" />
                   </p>
                 </motion.div>
@@ -766,7 +766,7 @@ export default function WeddingInvitation() {
                     <div className="flex flex-col items-start gap-4">
                       <div className="flex items-center gap-4">
                         <div className="w-8 h-px bg-theme-400" />
-                        <span className="text-theme-600 font-bold uppercase tracking-[0.4em] text-[9px] md:text-[11px]">The Venue</span>
+                        <span className="text-theme-600 font-bold uppercase tracking-[0.4em] text-[9px] md:text-[11px]">ස්ථානය</span>
                       </div>
                       <h2 className="font-playball text-[3.5rem] sm:text-[4rem] md:text-[5.5rem] text-theme-900 leading-[1] drop-shadow-sm ml-[-4px]">
                         ගෝල්ඩන් ෆ්ලවර් හෝටලය
@@ -786,7 +786,7 @@ export default function WeddingInvitation() {
                       </div>
 
                       <div className="pl-8 space-y-4 pt-4 text-stone-500 text-sm md:text-base tracking-wide font-light leading-relaxed">
-                        We look forward to welcoming you to this beautiful sanctuary to celebrate our special day amidst nature's elegance.
+                        අපගේ ජීවිතයේ මෙම සුවිශේෂී දිනය සැමරීමට ඔබගේ පැමිණීම ඉතා ගෞරවයෙන් අපේක්ෂා කරමු.
                       </div>
                     </div>
 
@@ -796,7 +796,7 @@ export default function WeddingInvitation() {
                         className="w-full md:w-auto flex items-center justify-center gap-4 bg-theme-800 text-white px-10 py-5 rounded-full font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs hover:bg-theme-900 hover:shadow-xl hover:shadow-theme-900/20 transition-all duration-300 group"
                       >
                         <MapPin className="w-4 h-4 group-hover:-translate-y-1 transition-transform duration-300" />
-                        Get Directions
+                        මාර්ගය ලබාගන්න
                       </button>
                     </div>
                   </motion.div>
@@ -828,7 +828,7 @@ export default function WeddingInvitation() {
                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/80 to-transparent h-32 pointer-events-none z-10 flex items-end justify-center pb-6">
                       <p className="text-[8px] uppercase tracking-widest text-stone-500 font-bold bg-white/90 px-5 py-2 rounded-full shadow-sm backdrop-blur-md inline-flex items-center gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-theme-400 animate-pulse" />
-                        View on Map
+                        සිතියමෙන් බලන්න
                       </p>
                     </div>
                   </motion.div>
@@ -851,33 +851,33 @@ export default function WeddingInvitation() {
                   className="flex flex-col items-center"
                 >
                   <p className="text-[10px] md:text-[12px] uppercase tracking-[0.5em] md:tracking-[0.8em] text-theme-300 font-bold mb-6">Will You Join Us?</p>
-                  <h2 className="font-playball text-[3.5rem] sm:text-[4rem] md:text-[5.5rem] text-white mb-6 drop-shadow-md">RSVP</h2>
+                  <h2 className="font-playball text-[3.5rem] sm:text-[4rem] md:text-[5.5rem] text-white mb-6 drop-shadow-md">පැමිණීම තහවුරු කිරීම</h2>
                   <div className="flex items-center gap-4 justify-center w-full mb-8 opacity-60">
                     <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent to-theme-300" />
                     <div className="w-1.5 h-1.5 rotate-45 bg-white" />
                     <div className="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-theme-300" />
                   </div>
                   <p className="text-stone-300 text-sm md:text-base max-w-md mx-auto leading-relaxed mb-16 tracking-wide font-light">
-                    We would be absolutely thrilled to celebrate with you. Kindly respond by the end of May.
+                    ඔබගේ පැමිණීම අපට මහත් සතුටකි. කරුණාකර ඔබගේ පැමිණීම තහවුරු කරන්න.
                   </p>
 
                     {/* Premium RSVP Form */}
                   <div className="w-full bg-white/5 backdrop-blur-md p-6 sm:p-8 md:p-12 rounded-[2rem] border border-white/10 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.5)]">
                     <form className="space-y-8 text-left" onSubmit={submitRSVP}>
                       <div className="space-y-3">
-                        <label className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] font-bold text-theme-200 ml-2">Full Name</label>
+                        <label className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] font-bold text-theme-200 ml-2">සම්පූර්ණ නම</label>
                         <input
                           type="text"
                           required
                           value={rsvpName}
                           onChange={(e) => setRsvpName(e.target.value)}
-                          placeholder="John & Jane Doe"
+                          placeholder="සමන් සහ කමලා"
                           className="w-full bg-transparent border-b border-white/20 px-2 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-theme-300 transition-colors font-cinzel text-lg md:text-xl tracking-wide"
                         />
                       </div>
 
                       <div className="space-y-3">
-                        <label className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] font-bold text-theme-200 ml-2">Guests</label>
+                        <label className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] font-bold text-theme-200 ml-2">අමුත්තන් ගණන</label>
                         <div className="relative">
                           <select
                             value={rsvpGuests}
@@ -885,10 +885,10 @@ export default function WeddingInvitation() {
                             className="w-full bg-transparent border-b border-white/20 px-2 py-3 text-white focus:outline-none focus:border-theme-300 transition-colors font-cinzel text-lg md:text-xl tracking-wide appearance-none cursor-pointer"
                           >
                             <option value="1" className="bg-[#2c2a26] text-white">1 Guest (Just Me)</option>
-                            <option value="2" className="bg-[#2c2a26] text-white">2 Guests</option>
-                            <option value="3" className="bg-[#2c2a26] text-white">3 Guests</option>
-                            <option value="4" className="bg-[#2c2a26] text-white">4 Guests</option>
-                            <option value="0" className="bg-[#2c2a26] text-theme-300">Regretfully Decline</option>
+                            <option value="2" className="bg-[#2c2a26] text-white">2 අමුත්තන්</option>
+                            <option value="3" className="bg-[#2c2a26] text-white">3 අමුත්තන්</option>
+                            <option value="4" className="bg-[#2c2a26] text-white">4 අමුත්තන්</option>
+                            <option value="0" className="bg-[#2c2a26] text-theme-300">කනගාටුවෙන් වුවද පැමිණිය නොහැක</option>
                           </select>
                           <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                             <div className="w-2 h-2 border-r border-b border-theme-300 rotate-45 transform -translate-y-[25%]" />
@@ -897,12 +897,12 @@ export default function WeddingInvitation() {
                       </div>
 
                       <div className="space-y-3">
-                        <label className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] font-bold text-theme-200 ml-2">Dietary Notes</label>
+                        <label className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] font-bold text-theme-200 ml-2">ආහාරමය සටහන්</label>
                         <input
                           type="text"
                           value={rsvpNotes}
                           onChange={(e) => setRsvpNotes(e.target.value)}
-                          placeholder="Allergies, Vegan, etc."
+                          placeholder="ආසාත්මිකතා, නිර්මාංශික යනාදිය"
                           className="w-full bg-transparent border-b border-white/20 px-2 py-3 text-white placeholder:text-white/30 focus:outline-none focus:border-theme-300 transition-colors font-cinzel text-lg md:text-xl tracking-wide"
                         />
                       </div>
@@ -914,7 +914,7 @@ export default function WeddingInvitation() {
                           className="w-full bg-theme-200 text-stone-900 py-5 rounded-full font-bold uppercase tracking-[0.3em] text-[10px] md:text-sm hover:bg-white hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] transition-all duration-300 group inline-flex justify-center items-center gap-4 disabled:opacity-50"
                         >
                           <span className="w-1.5 h-1.5 bg-stone-900 rotate-45 group-hover:scale-150 transition-transform" />
-                          {rsvpStatus === "submitting" ? "Sending..." : rsvpStatus === "success" ? "Sent Successfully" : "Send RSVP"}
+                          {rsvpStatus === "submitting" ? "යවමින්..." : rsvpStatus === "success" ? "සාර්ථකව යවන ලදි" : "තහවුරු කිරීම යවන්න"}
                           <span className="w-1.5 h-1.5 bg-stone-900 rotate-45 group-hover:scale-150 transition-transform" />
                         </button>
                       </div>
@@ -943,11 +943,11 @@ export default function WeddingInvitation() {
                       <Sparkles className="w-8 h-8 text-theme-500" />
                     </div>
 
-                    <h2 className="font-playball text-[3.5rem] sm:text-[4rem] md:text-[5.5rem] text-theme-800 mb-6 drop-shadow-sm leading-none">Best Wishes</h2>
+                    <h2 className="font-playball text-[3.5rem] sm:text-[4rem] md:text-[5.5rem] text-theme-800 mb-6 drop-shadow-sm leading-none">සුබ පැතුම්</h2>
                     <div className="h-px w-24 bg-gradient-to-r from-transparent via-theme-400 to-transparent mb-8" />
 
                     <p className="text-stone-500 text-sm md:text-lg leading-relaxed max-w-xl mx-auto mb-16 font-light tracking-wide px-4">
-                      Your presence at our wedding is the greatest gift of all. However, if you wish to honor us with a message, we would be delighted to read it!
+                      ඔබගේ පැමිණීම අපට වටිනාම තෑග්ගයි. කෙසේ වෙතත්, ඔබගේ සුබ පැතුම් අපට මහත් සතුටක් ගෙන දෙනු ඇත!
                     </p>
 
                     {/* Premium Wishing Form */}
@@ -957,24 +957,24 @@ export default function WeddingInvitation() {
 
                       <form className="space-y-8 text-left relative z-10" onSubmit={submitWish}>
                         <div className="space-y-3">
-                          <label className="text-[7px] md:text-[9px] uppercase tracking-[0.4em] font-bold text-stone-400 ml-2">Your Name</label>
+                          <label className="text-[7px] md:text-[9px] uppercase tracking-[0.4em] font-bold text-stone-400 ml-2">ඔබගේ නම</label>
                           <input
                             type="text"
                             required
                             value={wishName}
                             onChange={(e) => setWishName(e.target.value)}
-                            placeholder="John Doe"
+                            placeholder="සමන්"
                             className="w-full bg-stone-50/50 border-b border-theme-200 px-4 py-4 text-theme-900 placeholder:text-stone-300 focus:outline-none focus:border-theme-400 focus:bg-white transition-all font-cinzel text-lg tracking-wide rounded-t-lg"
                           />
                         </div>
                         <div className="space-y-3">
-                          <label className="text-[7px] md:text-[9px] uppercase tracking-[0.4em] font-bold text-stone-400 ml-2">Your Message</label>
+                          <label className="text-[7px] md:text-[9px] uppercase tracking-[0.4em] font-bold text-stone-400 ml-2">ඔබගේ පණිවිඩය</label>
                           <textarea
                             rows={4}
                             required
                             value={wishMessage}
                             onChange={(e) => setWishMessage(e.target.value)}
-                            placeholder="Wishing you a lifetime of happiness..."
+                            placeholder="ඔබට සදාකාලික සතුටක් ප්‍රාර්ථනා කරමි..."
                             className="w-full bg-stone-50/50 border-b border-theme-200 px-4 py-4 text-theme-900 placeholder:text-stone-300 focus:outline-none focus:border-theme-400 focus:bg-white transition-all font-cinzel text-lg tracking-wide resize-none rounded-t-lg"
                           />
                         </div>
@@ -985,7 +985,7 @@ export default function WeddingInvitation() {
                             className="bg-theme-800 text-white px-12 py-5 rounded-full font-bold uppercase tracking-[0.3em] text-[10px] hover:bg-theme-900 hover:shadow-xl hover:shadow-theme-900/20 transition-all duration-300 group/btn inline-flex items-center gap-4 disabled:opacity-50"
                           >
                             <span className="w-1.5 h-1.5 bg-white rotate-45 group-hover/btn:scale-150 transition-transform" />
-                            {wishStatus === "submitting" ? "Sending..." : wishStatus === "success" ? "Sent Successfully" : "Send Wishes"}
+                            {wishStatus === "submitting" ? "යවමින්..." : wishStatus === "success" ? "සාර්ථකව යවන ලදි" : "සුබ පැතුම් යවන්න"}
                             <span className="w-1.5 h-1.5 bg-white rotate-45 group-hover/btn:scale-150 transition-transform" />
                           </button>
                         </div>
@@ -994,10 +994,10 @@ export default function WeddingInvitation() {
 
                     <div className="mt-32 md:mt-48 space-y-6 flex flex-col items-center relative w-full">
                       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-playball text-[22vw] md:text-[220px] text-theme-100/40 whitespace-nowrap pointer-events-none z-0 select-none">
-                        Thank You
+                        ස්තූතියි
                       </div>
-                      <p className="text-[9px] md:text-[11px] uppercase tracking-[0.8em] text-theme-600 font-bold relative z-10 bg-[#fdfaf5] px-6 py-2 rounded-full border border-theme-100/50 shadow-sm">With Love</p>
-                      <h3 className="font-playball text-[3.2rem] sm:text-6xl md:text-8xl text-theme-900 relative z-10 drop-shadow-sm px-4 pt-4 leading-none">Isanka & Madusanka</h3>
+                      <p className="text-[9px] md:text-[11px] uppercase tracking-[0.8em] text-theme-600 font-bold relative z-10 bg-[#fdfaf5] px-6 py-2 rounded-full border border-theme-100/50 shadow-sm">ආදරයෙන්</p>
+                      <h3 className="font-playball text-[3.2rem] sm:text-6xl md:text-8xl text-theme-900 relative z-10 drop-shadow-sm px-4 pt-4 leading-none">ඉසංකා සහ මදුසංක</h3>
 
                       <motion.img
                         initial={{ opacity: 0, y: 24, scale: 0.95 }}
@@ -1016,10 +1016,10 @@ export default function WeddingInvitation() {
               {/* Footer */}
               <footer className="py-12 border-t border-theme-200/30 text-center relative z-10 space-y-3">
                 <p className="text-[8px] md:text-[10px] uppercase tracking-[0.5em] text-stone-400 font-bold">
-                  © 2026 Isanka & Madusanka. <span className="hidden md:inline">|</span><br className="md:hidden block mt-2" /> All rights reserved.
+                  © 2026 ඉසංකා සහ මදුසංක. <span className="hidden md:inline">|</span><br className="md:hidden block mt-2" /> සියලුම හිමිකම් ඇවිරිණි.
                 </p>
                 <p className="text-[8px] md:text-[10px] tracking-[0.3em] text-stone-400">
-                  Contact: <a href="tel:0716613988" className="text-theme-600 font-bold hover:text-theme-800 transition-colors">Isanka – 071 6613988</a>
+                  ඇමතුම්: <a href="tel:0716613988" className="text-theme-600 font-bold hover:text-theme-800 transition-colors">ඉසංකා – 071 6613988</a>
                 </p>
               </footer>
             </div>
